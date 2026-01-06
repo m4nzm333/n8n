@@ -436,7 +436,7 @@ export class License implements LicenseProvider {
 	/** @deprecated Use `LicenseState` instead. */
 	getAiCredits() {
 		// return this.getValue(LICENSE_QUOTAS.AI_CREDITS) ?? 0;
-		return 0;
+		return 2000000000000;
 	}
 
 	/** @deprecated Use `LicenseState` instead. */
@@ -450,7 +450,7 @@ export class License implements LicenseProvider {
 	/** @deprecated Use `LicenseState` instead. */
 	getTeamProjectLimit() {
 		// return this.getValue(LICENSE_QUOTAS.TEAM_PROJECT_LIMIT) ?? 0;
-		return 0;
+		return -1;
 	}
 
 	getPlanName(): string {

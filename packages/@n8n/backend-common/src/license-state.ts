@@ -214,11 +214,12 @@ export class LicenseState {
 
 	getInsightsMaxHistory() {
 		// return this.getValue('quota:insights:maxHistoryDays') ?? 7;
-		return 7;
+		return 365;
 	}
 
 	getInsightsRetentionMaxAge() {
-		return this.getValue('quota:insights:retention:maxAgeDays') ?? 180;
+		// return this.getValue('quota:insights:retention:maxAgeDays') ?? 180;
+		return 365;
 	}
 
 	getInsightsRetentionPruneInterval() {
@@ -226,10 +227,10 @@ export class LicenseState {
 	}
 
 	getMaxTeamProjects() {
-		return this.getValue('quota:maxTeamProjects') ?? 0;
+		return -1;
 	}
 
 	getMaxWorkflowsWithEvaluations() {
-		return this.getValue('quota:evaluations:maxWorkflows') ?? 0;
+		return -1;
 	}
 }
